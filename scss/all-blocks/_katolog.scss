@@ -1,0 +1,143 @@
+.katolog{
+   
+    
+    margin-bottom: 100px;
+    .container{
+        width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        align-items:center;
+        .katolog__item__h4{
+            font-size: 20px;
+            line-height: 34px;
+            color:#000;
+            margin-left: 30px;
+            padding-top: 18px;
+        }
+
+        .katolog__hr{
+            height: 2px;
+            background-color: #e8aa31;
+            width: 68px;
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+        
+        .katolog__item__list{
+            margin-left: 50px;
+            list-style-type: none;
+            .katolog__item__list__item{
+                font-size: $font-size;
+                line-height: 34px;
+                
+            }
+        }
+
+        .katolog__item__list__item::before{
+            content: "\2022";
+            color: #e8aa31;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+
+      
+
+    }
+
+
+
+
+}
+
+.katolog__list{
+    display: flex;
+    align-items:center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 100px 66px;
+
+    .katolog__list__item{
+        width: 400px;
+        height: 200px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        position: relative;
+        .katolog__img{
+            width: 283px;
+            height: 146px;
+            position: absolute;
+            bottom: 0px;
+            right: -63px;
+        }
+    }
+}
+
+.magazin{
+    display: none;
+}
+
+
+@media only screen and (max-width:360px){
+    .katolog__list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .magazin{
+        display: block;
+        width: 290px;
+        height: 1022px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .magazin__heading{
+        font-size: 20px;
+        line-height: 32px;
+        width: 280px;
+        padding: 15px 20px;
+    }
+
+    .magazin__desc{
+        font-size: $font-size - 2px;
+        line-height: 24px;
+        width: 280px;
+        padding: 15px 20px;
+
+
+    }
+
+    .katolog__list__item{
+        width: 290px !important;
+        height: 300px !important;
+        margin-left: -30px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .katolog__list{
+        margin-top: 50px;
+    }
+
+    .katolog__img1, .katolog__img3, .katolog__img5{
+        rotate: -90deg;
+        width: 483px !important;
+        height: 246px !important;
+        position: absolute;
+        left: -80px;
+        top: 100px;
+    }
+
+    .katolog__img2, .katolog__img4, .katolog__img6{
+        rotate: -270deg;
+        width: 483px !important;
+        height: 246px !important;
+        position: absolute;
+        left: -120px;
+        top: 100px;
+    }
+}

@@ -1,0 +1,110 @@
+.new-sec{
+    height: 761px;
+    background-image: url(/assets/image/nev-sec__bg-image.svg);
+    width: 100%;
+    margin-top: 164px;
+    margin-bottom: 120px;
+    position: relative;
+
+
+    .container{
+        display: flex;
+        /* align-items:center; */
+        justify-content: space-between;
+
+        .new-sec--left__h2{
+            font-size: $font-size + 12px;
+            line-height: 46px;
+            color:#ffffff;
+            padding-top: 18px;
+            margin-left: 37px;
+        }
+
+        .new-sec--left__desc{
+            width: 336px;
+            font-size: $font-size;
+            line-height: 27px;
+            color:#fff;
+            margin-left: 37px;
+            margin-top: 33px;
+
+        }
+
+        .big__new{
+            width: 220px;
+            @include wrapper;
+            margin-left: 37px;
+            margin-top: 60px;
+
+            .big__new__desc{
+                font-size: $font-size + 2px;
+                line-height: 46px;
+                color: #e8aa31;
+            }
+        }
+    }
+}
+
+.new-sec__list-gap{
+    gap: 30px;
+    margin-top: 55px;
+}
+
+.new-sec--bottom__icon{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.new-sec--top__box{
+    width: 780px;
+    height: 24px;
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+}
+
+
+@media only screen and (max-width:360px){
+    .new-sec{
+        height: 2493px;
+        width: 330px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+        margin-bottom: 200px !important;
+
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .new-sec--left__h2{
+            font-size: 24px;
+            line-height: 46px;
+            text-align: center;
+            margin-left: -15px;
+        }
+
+        .new-sec--left__desc{
+            font-size: 16px;
+            line-height: 27px;
+            width: 275px !important;
+            text-align: left;
+            /* margin-left: -10px !important; */
+        }
+    }
+
+    .big__new{
+        margin-bottom: 160px;
+        margin-top:10px !important;
+    }
+    
+    .best-seller__list_2{
+        margin-left: 8px !important;
+    }
+}

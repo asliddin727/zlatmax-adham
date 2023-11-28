@@ -1,0 +1,60 @@
+$bg-color:#141414;
+
+@mixin wrapper{
+  display: flex;
+  align-items:center;
+  gap: 10px;
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Livvic', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+overflow-x: hidden;
+
+}
+
+/* .header, .hero{
+  ol, ul{
+    list-style-type: none;
+  }
+} */
+ol,ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #141414; 
+  display: none;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #141414; 
+  border-radius:100px;
+  border: 3px solid #8a8a8a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3d3d; 
+}
